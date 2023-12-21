@@ -29,7 +29,7 @@ function App() {
       <h1>Stopwatch</h1>
       <div style={{ margin: "40px 0px" }}>Time: {formatTheTime(timer)}</div>
       <button onClick={toggle}>{isActivated ? "Stop" : "Start"}</button>
-      <button disabled={isActivated===true?true:false} onClick={()=>setTimer(0)}>Reset</button>
+      <button onClick={()=>setTimer(0)}>Reset</button>
     </div>
   );
 }
